@@ -1,0 +1,258 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #030306;
+    height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* ESTILO CABEÇALHO */
+header{
+    padding: 40px 4%;
+
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #545454;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+}
+
+header a:hover{
+    color:#ffffff;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button{
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #f84e00;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 10px #f84e00;
+}
+
+.logo a img{
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+
+
+/* ESTILO HOME PAGE */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 3%;
+    max-width: 100%;
+    min-height: 600px;
+    min-width: 1200px;
+}
+
+.description-container{
+    width: 500px;
+    height: 600px;
+    padding-top: 50px;
+}
+
+.photo-container{
+    width: 500px;
+    height: 600px;
+    padding-left: 70px;
+}
+
+.details-container{
+    width: 500px;
+    height: 600px;
+    padding-top: 30px;
+    padding-left: 100px;
+}
+
+#hello{
+    height: 60px;
+    color: #232323;
+    font-size: 60px;
+}
+
+#name{
+    height: 100px;
+    color: #f84e00;
+    font-size: 80px;
+}
+
+#position{
+    color: #ababab;
+    font-size: 35px;
+}
+
+#hire-me-btn{
+    margin-top: 10px;
+    width: 165px;
+    height: 45px;
+    font-size: 28px;
+    font-weight: 600;
+    background-color: #f84e00;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#hire-me-btn:hover{
+    /* box-shadow: 0px 0px 5px #f84e00; */
+    transform: scale(1.10);
+    transition: .5s;
+}
+
+#my-works-btn{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 165px;
+    height: 45px;
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    background-color: #151515;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#my-works-btn:hover{
+    /* box-shadow: 0px 0px 5px #151515; */
+    transform: scale(1.10);
+    transition: .5s;
+}
+
+.home-photo img{
+    width: 400px;
+    max-height: 600px;
+    padding-right: 30px;
+    background-color: #f84e00;
+    border-radius: 50px;
+    transition: .8s;
+    /* Transforma em cinza a imagem */
+    /* filter: grayscale(100%); */
+}
+
+.home-photo img:hover{
+    /* Colore a foto */
+    /* filter: grayscale(0%); */
+    transform: translateY(-20px);
+}
+
+.my-info{
+    background-color: #232323;
+    border-radius: 25px;
+    width: 300px;
+    height: 400px;
+    padding: 20px 25px;
+    margin: 0 25px;
+}
+
+.num-details{
+    color: #f84e00;
+}
+
+.info-details{
+    color: white;
+}
+
+.details-container hr{
+    color: #151515;
+    border: 1px solid;
+    width: 230px;
+    margin: 30px 0;
+    margin-left: 10px;
+}
+
+/* ESTILO DA SECTION DE SKILLS */
+
+.skills-container {
+    padding: 50px 20px;
+    background-color: #030306;
+    text-align: center;
+}
+
+#skills-title{
+    height: 100px;
+    font-size: 80px;
+    color: #f84e00;
+    padding-bottom: 150px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill{
+    color: #f9f9f9;
+    background-color: #232323;
+    margin-top: 20px;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 15px;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+}
+
+.skill h2{
+    color: #f9f9f9;
+    /* background-color: #ff1010; */
+    font-size: 23px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+.skills-grid img{
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    background-color: #232323;
+}
+
+#python-img{
+    max-width: 200px;
+}
