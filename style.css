@@ -21,9 +21,14 @@ html {
 }
 
 /* ESTILO CABEÇALHO */
-header{
-    padding: 40px 4%;
-
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 4%;
+    z-index: 10;
+    background-color: #030306;
 }
 
 header > .interface{
@@ -76,11 +81,11 @@ header .btn-contato button:hover{
 
 
 /* ESTILO HOME PAGE */
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 3%;
+    padding: 200px 3% 0;
     max-width: 100%;
     min-height: 600px;
     min-width: 1200px;
@@ -160,20 +165,16 @@ header .btn-contato button:hover{
     transition: .5s;
 }
 
-.home-photo img{
+.home-photo img {
     width: 400px;
     max-height: 600px;
     padding-right: 30px;
     background-color: #f84e00;
     border-radius: 50px;
     transition: .8s;
-    /* Transforma em cinza a imagem */
-    /* filter: grayscale(100%); */
 }
 
-.home-photo img:hover{
-    /* Colore a foto */
-    /* filter: grayscale(0%); */
+.home-photo img:hover {
     transform: translateY(-20px);
 }
 
@@ -181,7 +182,7 @@ header .btn-contato button:hover{
     background-color: #232323;
     border-radius: 25px;
     width: 300px;
-    height: 400px;
+    height: 360px;
     padding: 20px 25px;
     margin: 0 25px;
 }
@@ -202,12 +203,57 @@ header .btn-contato button:hover{
     margin-left: 10px;
 }
 
+
+/* ESTILO DA SECTION DE ABOUT */
+
+.about-container {
+    padding: 50px 20px;
+    background-color: #030306;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about-title {
+    text-align: justify;
+    font-size: 80px;
+    color: #f84e00;
+    margin-bottom: 50px;
+}
+
+.text-about-me {
+    display: flex;
+    gap: 15px;
+    align-items: flex;
+    text-align: justify;
+}
+
+.left-line {
+    border: 1.5px solid #f84e00;
+    width: 80px;
+    margin-top: 12px;
+}
+
+.about-text {
+    color: #f9f9f9;
+    text-align: justify;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.highlight {
+    color: #f84e00;
+    font-weight: bold;
+}
+
 /* ESTILO DA SECTION DE SKILLS */
 
 .skills-container {
     padding: 50px 20px;
     background-color: #030306;
     text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #skills-title{
@@ -228,18 +274,25 @@ header .btn-contato button:hover{
 .skill{
     color: #f9f9f9;
     background-color: #232323;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-right: 70px;
     max-width: 300px;
     max-height: 300px;
     border-radius: 15px;
     width: 250px;
     height: 250px;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.8s;
+}
+
+.skill:hover {
+    transform: translateY(-20px);
 }
 
 .skill h2{
     color: #f9f9f9;
-    /* background-color: #ff1010; */
     font-size: 23px;
     margin-bottom: 20px;
     padding-top: 30px;
@@ -251,8 +304,68 @@ header .btn-contato button:hover{
     max-width: 100px;
     max-height: 100px;
     background-color: #232323;
+    margin: 0;
+    transition: filter 0.8s;
+    filter: grayscale(100%);
 }
 
-#python-img{
-    max-width: 200px;
+.skill:hover img {
+    filter: grayscale(0%);
+}
+
+/* ESTILO DA SECTION DE CONTACT */
+
+.contact-container {
+    padding: 50px 20px;
+    background-color: #030306;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-left-line{
+    border: 1.5px solid #f84e00;
+    width: 300px;
+    margin-bottom: -70px;
+}
+
+#contact-title{
+    height: 100px;
+    font-size: 80px;
+    color: #f84e00;
+    margin-bottom: -30px;
+}
+
+#contact-right-line{
+    border: 1.5px solid #f84e00;
+    width: 300px;
+    margin-bottom: -70px;
+}
+
+.contact-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #181615;
+    margin-left: 0 auto;
+}
+
+.user-info{
+    color: #ffffff;
+    display: block;
+}
+
+.my-contact-infos{
+    color: #ffffff;
+    display: block;
+}
+
+.my-contact-infos i{
+    color: #f84e00;
 }

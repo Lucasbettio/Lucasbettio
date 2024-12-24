@@ -6,6 +6,7 @@
     <!-- FONTE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- FIM DA FONTE -->
@@ -23,15 +24,15 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">PROJECTS</a></li>
-                    <li><a href="">ABOUT</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#about">ABOUT</a></li>
                     <li><a href="#skills">SKILLS</a></li>
                 </ul>
             </nav>
 
             <div class="btn-contato">
-                <a href="">
+                <a href="#contact">
                     <button> CONTACT </button>
                 </a>
             </div>
@@ -66,7 +67,35 @@
                     <span class="info-details">Hours of Coding Experience</span>
                 </div>
             </div>
-    
+        </div>
+    </section>
+
+    <section id="about" class="about-container">
+        <h2 id="about-title">About</h2>
+        <div class="text-about-me">
+            <div class="line-div">
+                <hr id="left-line" class="line left-line">
+            </div>
+            <div class="text-div">
+                <p class="about-text">
+                    Hello, I'm a passionate <span class="highlight">software developer</span> with a strong background in backend development and full-stack applications. 
+                </p>
+                <p class="about-text">
+                    Since starting my career in programming in 2023, I've worked extensively with <span class="highlight">Python</span> and <span class="highlight">TypeScript</span>, as well as tools like <span class="highlight">Docker</span>, <span class="highlight">Angular</span>, and <span class="highlight">Node.js</span>.
+                </p>
+                <p class="about-text">
+                    My expertise lies in creating robust <span class="highlight">APIs</span>, automating processes, and developing user-centric solutions.
+                </p>
+                <p class="about-text">
+                    I take pride in solving complex problems, like building a network management dashboard that analyzes all collect nodes or creating tools to optimize network management for Cisco devices, creating automated topologies and reports.
+                </p>
+                <p class="about-text">
+                    Beyond technical skills, I enjoy collaborating with teams, learning new technologies to improve my craft, being very communicative with my team.
+                </p>
+                <p class="about-text">
+                    I'm excited about leveraging my skills to deliver impactful software solutions, inovated websites and continuously grow as a developer and person.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -79,42 +108,77 @@
             </div>
             <div class="skill">
                 <h2>HTML e CSS</h2>
-                <img src="images/htmlcss.png" alt="HTML and CSS">
+                <img id="html-css-img" src="images/htmlcss.png" alt="HTML and CSS">
             </div>
             <div class="skill">
                 <h2>JavaScript</h2>
-                <img src="images/js.png" alt="JavaScript">
+                <img id="js-img" src="images/js.png" alt="JavaScript">
             </div>
             <div class="skill">
                 <h2>Typescript</h2>
-                <img src="images/typescript.png" alt="Typescript">
+                <img id="typescript-img" src="images/typescript.png" alt="Typescript">
             </div>
             <div class="skill">
                 <h2>Angular</h2>
-                <img src="images/angular.png" alt="Angular">
+                <img id="angular-img" src="images/angular.png" alt="Angular">
             </div>
             <div class="skill">
                 <h2>Git Source Control</h2>
-                <img src="images/git.png" alt="Git">
+                <img id="git-img" src="images/git.png" alt="Git">
             </div>
             <div class="skill">
                 <h2>Docker</h2>
-                <img src="images/docker.png" alt="Docker">
+                <img id="docker-img" src="images/docker.png" alt="Docker">
             </div>
             <div class="skill">
                 <h2>Portainer</h2>
-                <img src="images/portainer.png" alt="Portainer">
+                <img id="portainer-img" src="images/portainer.png" alt="Portainer">
             </div>
             <div class="skill">
                 <h2>Ubuntu</h2>
-                <img src="images/ubuntu.png" alt="Ubuntu">
+                <img id="ubuntu-img" src="images/ubuntu.png" alt="Ubuntu">
             </div>
             <div class="skill">
                 <h2>PostgreSQL</h2>
-                <img src="images/postgreSQL.png" alt="PostgreSQL">
+                <img id="postgresql-img" src="images/postgreSQL.png" alt="PostgreSQL">
             </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-container">
+        <div class="contact-header">
+            <hr id="contact-left-line">
+            <h2 id="contact-title">Contact Me</h2>
+            <hr id="contact-right-line">
+        </div>
+        <div class="contact-div">
+            <div class="user-entry">
+                <p class="contact-text">Let's build your <span class="highlight">future</span> together!</p>
+                <span class="user-info">Full Name</span>
+                <input type="text">
+                <span class="user-info">E-mail</span>
+                <input type="email">
+                <span class="user-info">Message</span>
+                <input type="text">
+                <button>Send</button>
+            </div>
+            <div class="my-contact-infos">
+                <p class="my-email-title">My E-mail</p>
+                <i class="bi bi-envelope-at"></i>
+                <p class="contact-info">lucassbettio@gmail.com</p>
+                <p class="other-contact-title">Other</p>
+                <i class="bi bi-telephone"></i>
+                <p class="contact-info">+55 51 995130503</p>
+                <i class="bi bi-instagram"></i>
+                <p class="contact-info">@lucas_bettio_</p>
+                <i class="bi bi-linkedin"></i>
+                <p class="contact-info">@lucas-bettio</p>
+            </div>
+
         </div>
     </section>
     
 </body>
+    <script src="script.js"></script>
 </html>
