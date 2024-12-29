@@ -160,15 +160,19 @@
                 <h1 id="second-text"><span class="highlight">future</span> together.</h1>
             </div>
             <div class="contact-div-wrapper">
-                <div class="user-entry">
-                    <span class="user-info">Full Name</span>
-                    <input type="text">
-                    <span class="user-info">E-mail</span>
-                    <input type="email">
-                    <span class="user-info">Message</span>
-                    <textarea class="message-entry" maxlength="1000"></textarea>
-                    <button class="send-email" type="submit">Send</button>
-                </div>
+                    <div class="user-entry">
+                        <form action="https://formsubmit.co/lucassbettio@gmail.com" method="POST">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_subject" value="New e-mail from Portfolio Web">
+                            <span class="user-info">Full Name</span>
+                            <input type="text" name="name" required>
+                            <span class="user-info">E-mail</span>
+                            <input type="email" name="email" required>
+                            <span class="user-info">Message</span>
+                            <textarea class="message-entry" name="message" maxlength="1000"></textarea>
+                            <button class="send-email" type="submit">Send</button>
+                        </form>
+                    </div>
                 <div class="my-contact-infos">
                     <div class="my-contact-infos-title">
                         <span class="other-contacts">Other Contacts</span>

@@ -6,7 +6,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const targetElement = document.getElementById(targetId);
 
         window.scrollTo({
-            top: targetElement.offsetTop - 100, // Ajusta o valor de 100px para o espaço do cabeçalho fixo
+            top: targetElement.offsetTop - 100,
             behavior: 'smooth'
         });
     });
