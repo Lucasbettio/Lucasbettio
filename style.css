@@ -521,6 +521,7 @@ header .btn-contato button:hover {
 
 
 .modal {
+    display: none;
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -529,8 +530,6 @@ header .btn-contato button:hover {
     height: 100vh;
     background: rgba(3, 3, 6, 0.85);
     backdrop-filter: blur(2px);
-    /* Centralização garantida */
-    display: flex;
     justify-content: center;
     align-items: center;
 }

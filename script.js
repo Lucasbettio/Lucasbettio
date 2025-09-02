@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
             })
             .then(response => {
                 if (response.ok) {
-                    modal.style.display = 'block';
+                    modal.style.display = 'flex';
                     form.reset();
                 } else {
                     alert('Erro ao enviar. Tente novamente.');
