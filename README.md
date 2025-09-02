@@ -48,10 +48,6 @@ Você pode entrar em contato comigo pelo formulário do site ou diretamente pelo
    ```
 2. Abra o arquivo `index.html` em seu navegador.
 
-## 📝 Licença
-
-Este projeto está sob a licença MIT.
-
 ---
 
 Feito com 💻
