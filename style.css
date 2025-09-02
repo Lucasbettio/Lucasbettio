@@ -1,12 +1,14 @@
-/* ESTILO GERAL */
-*{
+/* ============================================================
+   RESET E ESTILO GERAL
+============================================================ */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-color: #030306;
     height: 100vh;
 }
@@ -15,12 +17,14 @@ html {
     scroll-behavior: smooth;
 }
 
-.interface{
+.interface {
     max-width: 1280px;
     margin: 0 auto;
 }
 
-/* ESTILO CABEÇALHO */
+/* ============================================================
+   CABEÇALHO
+============================================================ */
 header {
     position: fixed;
     top: 0;
@@ -31,35 +35,35 @@ header {
     background-color: #030306;
 }
 
-header > .interface{
+header > .interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header a{
+header a {
     color: #545454;
     text-decoration: none;
     font-size: 16px;
     display: inline-block;
 }
 
-header a:hover{
-    color:#ffffff;
+header a:hover {
+    color: #ffffff;
     transform: scale(1.05);
     transition: .2s;
 }
 
-header nav ul{
+header nav ul {
     list-style-type: none;
 }
 
-header nav ul li{
+header nav ul li {
     display: inline-block;
     padding: 0 40px;
 }
 
-header .btn-contato button{
+header .btn-contato button {
     padding: 10px 25px;
     font-size: 16px;
     font-weight: 500;
@@ -69,18 +73,20 @@ header .btn-contato button{
     cursor: pointer;
 }
 
-header .btn-contato button:hover{
+header .btn-contato button:hover {
     box-shadow: 0px 0px 10px #f84e00;
 }
 
-.logo a img{
+.logo a img {
     width: 100px;
     height: 100px;
     display: flex;
 }
 
 
-/* ESTILO HOME PAGE */
+/* ============================================================
+   HOME PAGE
+============================================================ */
 .container {
     display: flex;
     align-items: center;
@@ -206,8 +212,9 @@ header .btn-contato button:hover{
 }
 
 
-/* ESTILO DA SECTION DE ABOUT */
-
+/* ============================================================
+   ABOUT
+============================================================ */
 .about-container {
     padding: 50px 20px;
     background-color: #030306;
@@ -248,8 +255,9 @@ header .btn-contato button:hover{
     font-weight: bold;
 }
 
-/* ESTILO DA SECTION DE SKILLS */
-
+/* ============================================================
+   SKILLS
+============================================================ */
 .skills-container {
     padding: 50px 20px;
     background-color: #030306;
@@ -315,8 +323,9 @@ header .btn-contato button:hover{
     filter: grayscale(0%);
 }
 
-/* ESTILO DA SECTION DE CONTACT */
-
+/* ============================================================
+   CONTACT
+============================================================ */
 .contact-container {
     padding: 50px 20px;
     background-color: #030306;
@@ -521,9 +530,9 @@ header .btn-contato button:hover{
     background: rgba(3, 3, 6, 0.85);
     backdrop-filter: blur(2px);
     /* Centralização garantida */
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-content {
