@@ -92,39 +92,41 @@ header .btn-contato button:hover{
 }
 
 .description-container{
-    width: 500px;
+    width: 700px;
     height: 600px;
     padding-top: 50px;
+    padding-left: 100px;
+    margin-left: 200px;
 }
 
-.photo-container{
+/* .photo-container{
     width: 500px;
     height: 600px;
     padding-left: 70px;
-}
+} */
 
 .details-container{
     width: 500px;
     height: 600px;
     padding-top: 30px;
-    padding-left: 100px;
 }
 
 #hello{
-    height: 60px;
+    height: 70px;
     color: #232323;
-    font-size: 60px;
+    font-size: 80px;
 }
 
 #name{
-    height: 100px;
+    height: 120px;
+    width: 700px;
     color: #f84e00;
-    font-size: 80px;
+    font-size: 100px;
 }
 
 #position{
     color: #ababab;
-    font-size: 35px;
+    font-size: 55px;
 }
 
 #hire-me-btn{
@@ -165,7 +167,7 @@ header .btn-contato button:hover{
     transition: .5s;
 }
 
-.home-photo img {
+/* .home-photo img {
     width: 400px;
     max-height: 600px;
     padding-right: 30px;
@@ -176,7 +178,7 @@ header .btn-contato button:hover{
 
 .home-photo img:hover {
     transform: translateY(-20px);
-}
+} */
 
 .my-info{
     background-color: #232323;
@@ -510,36 +512,61 @@ header .btn-contato button:hover{
 
 
 .modal {
-    display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100vh;
+    background: rgba(3, 3, 6, 0.85);
+    backdrop-filter: blur(2px);
+    /* Centralização garantida */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+    background-color: #232323;
+    /* margin: auto; removido */
+    padding: 32px 24px;
+    border: 2px solid #f84e00;
+    width: 350px;
     text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 0 24px #f84e0055;
+    color: #f9f9f9;
+    position: relative;
 }
 
 .close {
-    color: #aaa;
-    font-size: 28px;
+    color: #f84e00;
+    font-size: 32px;
     font-weight: bold;
-    float: right;
+    position: absolute;
+    top: 18px;
+    right: 22px;
     cursor: pointer;
+    transition: color 0.2s;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+    color: #fff;
+    text-shadow: 0 0 8px #f84e00;
+}
+
+.modal-content h2 {
+    color: #f84e00;
+    font-size: 28px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.modal-content p {
+    color: #f9f9f9;
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 8px;
 }
